@@ -50,7 +50,7 @@ export default function BasicTable () {
                 <Button sx={{mx: 2}}   type={'submit'}   variant={'outlined'} color={'primary'} >Add</Button>
             </Box>
         <TableContainer component={Paper}>
-            <Table sx={{ minWidth: 550 }} aria-label="simple table">
+            <Table sx={{ minWidth: 550}} aria-label="simple table" >
                 <TableHead>
                     <TableRow sx={{font: 'bold'}}>
                         <TableCell>Salary</TableCell>
@@ -66,9 +66,9 @@ export default function BasicTable () {
                             <TableCell component="th" scope="row">
                                 {salary}
                             </TableCell>
-                            {matches ?  <TableCell align={'right'} >
+                            {matches ?  <TableCell align={'right'} sx={{borderSpacing: 3, borderCollapse: 'separate'}}>
                                 {document.map((item, index) =>
-                                    <TableCell style={{border: '2px solid #0000EE '}} align={'right'} key={index} >{item}</TableCell>)}
+                                    <TableCell  style={{border: '2px solid #0000EE '}} align={'right'} key={index} >{item}</TableCell>)}
                             </TableCell>
                                  :
                                 <TableCell>
