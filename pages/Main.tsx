@@ -1,7 +1,7 @@
 import React from 'react';
 import {NextPage} from "next";
-import Main from "../Component/Main";
-
+// @ts-ignore
+import Main from "../Component/Main.tsx";
 const Index : NextPage = () => {
 
     return (
