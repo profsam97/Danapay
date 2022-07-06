@@ -15,12 +15,13 @@ function MyApp({ Component, pageProps }: AppProps) {
         }
     })
   return (
+              <ContextProvider>
       <ThemeProvider theme={theme}>
-          <ContextProvider>
               <SnackbarComponent/>
         <Component {...pageProps} />
-          </ContextProvider>
       </ThemeProvider>
+          </ContextProvider>
+
       )
 }
 

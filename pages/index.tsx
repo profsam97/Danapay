@@ -1,11 +1,11 @@
 import React from 'react';
 import {NextPage} from "next";
-import Main from "../Component/Main";
+import Home from "../Component/Main";
 
 const Index : NextPage = () => {
 
     return (
-     <Main/>
+     <Home/>
     );
 };
 
